@@ -1,0 +1,396 @@
+        #myBody{
+            margin:0px;
+        }
+        #myH1{
+            background-color:darkblue;
+            margin:0px;
+            height:60px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #myH1 a{
+            text-decoration:none;
+            color:gold;
+        }
+        #my_h1{
+            color:green;
+            text-decoration:underline;
+        }
+        #myNav{
+            position:sticky;
+            top:0;
+        }
+        #myNav ul{
+            background-color:#0606b8;
+            padding:0px;
+            margin:0px;
+            border-radius:0px;
+            list-style-type:none;
+            overflow:hidden;
+        }
+        #myNav li{
+            float:left;
+            width:14%;
+        }
+        #myNav a{
+            color:white;
+            text-decoration:none;
+            padding:25px;
+            display:block;
+            text-align:center;
+            border-radius:10px;
+            transition:0.25s;
+        }
+        #myNav a:hover{
+            background-color:#77049a;
+            color:yellow;
+        }
+        #myNav a:active{
+            background-color:#6e048e;
+        }
+        #myFooter{
+            background-color:darkblue;
+            color:white;
+            padding:10px;
+            margin:0px;
+            text-align:center;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            height:auto;
+            position:sticky;
+            bottom:0;
+        }
+        #myFooter a{
+            color:white;
+            text-decoration:none;
+            transition:0.4s;
+        }
+        #myFooter a:hover{
+            color:yellow;
+        }
+        .myIcons a{
+            color:white;
+            text-align:center;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            transition:0.3s;
+            color:white;
+            width:40px;
+            height:40px;
+            font-size:20px;
+            border-radius:20px;
+        }
+        .myIcons a:hover{
+            background-color:black;
+        }
+        .myFacebook{
+            background:#3B5998;
+            color:white;
+        }
+        .myTwitter{
+            background:#55ACEE;
+            color:white;
+        }
+        .myGoogle{
+            background:#dd4b39;
+            color:white;
+        }
+        .myLinkedin{
+            background:#007bb5;
+            color:white;
+        }
+        .myYoutube{
+            background:#bb0000;
+            color:white;
+        }
+        #mySearch{
+            position:absolute;
+            top:20%;
+            right:15px;
+            height:30px;
+            width:200px;
+            border-radius:14px;
+            border:2px solid gold;
+            padding-left:20px;
+            outline:none;
+        }
+        #myFrame{
+            border:1px solid black;
+        }
+        #myDiv{
+            background-color:cyan;
+            border:5px solid darkblue;
+            padding:60px;
+            margin:20px auto;
+            border-radius:20px;
+            text-align:center;
+            width:600px; 
+        }
+        .myMaterials{
+            display:inline-block; 
+            margin:25px; 
+            background-color:tomato;
+            border:5px solid black;
+            width:230px;
+            height:230px;
+            box-shadow:5px 5px 5px brown;
+            vertical-align:top;
+            border-radius:10px;
+            transition:0.4s;
+            cursor:pointer;
+        }
+        .myMaterials:hover{
+            background-color:gold;
+            transform:scale(1.2);
+        }
+        .myMaterials a{
+            text-decoration:none;
+            color:black;
+        }
+        .myP{
+            display:none;
+            font-size:15px;
+            padding:10px;
+            color:black;
+        }
+        #my_p{
+            font-size:22px;
+            color:black;
+        }
+        .myMaterials:hover .myP {
+            display:block;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*                               Dark mode                          */
+
+
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+/* Links */
+body.dark-mode a {
+    color: #4a9eff;
+}
+
+body.dark-mode a:hover {
+    color: #6bb3ff;
+    text-decoration: underline;
+}
+
+/* Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #f0f0f0;
+}
+
+/* HR */
+body.dark-mode hr {
+    border-top: 1px solid #2d3748;
+}
+
+/* Header */
+body.dark-mode header {
+    background-color: #0f1419;
+    border-bottom: 2px solid #4a9eff;
+}
+
+body.dark-mode header h1 {
+    color: #4a9eff;
+}
+
+body.dark-mode header nav a {
+    color: #e0e0e0;
+}
+
+body.dark-mode header nav a:hover {
+    color: #4a9eff;
+}
+
+/* Content Sections */
+body.dark-mode .explainVid,
+body.dark-mode .lectureRec,
+body.dark-mode .comp,
+body.dark-mode .codeTest {
+    background-color: #16213e;
+    border: 1px solid #2d3748;
+}
+
+/* Video */
+body.dark-mode .explainVid video {
+    border: 1px solid #2d3748;
+}
+
+/* Table */
+body.dark-mode .compTable caption {
+    color: #b0b0b0;
+}
+
+body.dark-mode .compTable thead {
+    background-color: #1e3a5f;
+    color: #ffffff;
+}
+
+body.dark-mode .compTable th,
+body.dark-mode .compTable td {
+    border: 1px solid #2d3748;
+    color: #e0e0e0;
+}
+
+body.dark-mode .compTable tbody tr:nth-child(even) {
+    background-color: #1f2937;
+}
+
+body.dark-mode .compTable tbody tr:hover {
+    background-color: #2d3748;
+}
+
+body.dark-mode .compTable code {
+    background-color: #0f1419;
+    color: #4a9eff;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* iFrame */
+body.dark-mode .codeTest iframe {
+    border: 1px solid #2d3748;
+    background-color: #0f1419;
+}
+
+/* Aside / Form Section */
+body.dark-mode aside section {
+    background-color: #16213e;
+    border: 1px solid #2d3748;
+}
+
+body.dark-mode aside h3 {
+    color: #4a9eff;
+    border-bottom: 2px solid #6bb3ff;
+}
+
+/* Form */
+body.dark-mode form fieldset {
+    border: 1px solid #2d3748;
+    background-color: #1f2937;
+}
+
+body.dark-mode form legend {
+    color: #4a9eff;
+}
+
+body.dark-mode form label {
+    color: #e0e0e0;
+}
+
+body.dark-mode form input[type="text"],
+body.dark-mode form input[type="email"],
+body.dark-mode form textarea {
+    background-color: #252d3a;
+    border: 1px solid #2d3748;
+    color: #e0e0e0;
+}
+
+body.dark-mode form input[type="text"]:focus,
+body.dark-mode form input[type="email"]:focus,
+body.dark-mode form textarea:focus {
+    border-color: #4a9eff;
+    background-color: #2d3748;
+}
+
+body.dark-mode form input[type="submit"] {
+    background-color: #4a9eff;
+    color: #ffffff;
+}
+
+body.dark-mode form input[type="submit"]:hover {
+    background-color: #6bb3ff;
+}
+
+body.dark-mode form input[type="reset"] {
+    background-color: #252d3a;
+    color: #e0e0e0;
+    border: 1px solid #2d3748;
+}
+
+body.dark-mode form input[type="reset"]:hover {
+    background-color: #2d3748;
+}
+
+/* Section Intro Header */
+body.dark-mode main>section>header {
+    background-color: #1e3a5f;
+    color: #ffffff;
+}
+
+body.dark-mode main>section>header h2 {
+    color: #ffffff;
+}
+
+body.dark-mode main>section>header p {
+    color: #b0d4ff;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #0f1419;
+    border-top: 1px solid #2d3748;
+    color: #b0b0b0;
+}
+
+body.dark-mode footer a {
+    color: #4a9eff;
+}
+
+/* button style */
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.9s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #4a9eff;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background-color: #6bb3ff;
+}

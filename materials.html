@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edugate | Materials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="materials.css">
+    <style>
+                *{
+            font-family:cursive;
+        }
+    </style>
+</head>
+
+<body id="myBody">
+    <h1 id="myH1"><a href="materials.html">Edugate | Materials</a></h1>
+    <nav id="myNav">
+        <ul>
+            <li><a href ="#">Home</a></li>
+            <li><a href ="#">Sign up</a></li>
+            <li><a href ="#">Login</a></li>
+            <li><a href ="#">Specialization</a></li>
+            <li><a href ="#">Details</a></li>
+            <li><a href ="#">About</a></li>
+        </ul>    
+    <input type="text" id="mySearch" placeholder="Search for materials">
+    </nav>
+    
+    <div id="myDiv">
+        <h1 id="my_h1">Available Materials</h1>
+        <p id="my_p">Select a subject to show its contents</p>
+        <div class="myMaterials">
+            <a href="Material/math.pdf" target="myFrame" onclick="location.href='#myFrame'">
+                <h1>Math</h1>
+                <p class="myP">Calculus, Algebra, Sequences & Series</p>
+            </a>
+    </div>
+        <div class="myMaterials">
+            <a href="Material/pl.pdf" target="myFrame" onclick="location.href='#myFrame'">
+                <h1>Programming Language</h1>
+                <p class="myP">Java, Python, C & C++</p>
+            </a>
+        </div>
+        <div class="myMaterials">
+            <a href="Material/stat.pdf" target="myFrame" onclick="location.href='#myFrame'">
+                <h1>Statistics & Probability</h1>
+                <p class="myP">Population, Distribution, Statistics & Parameters</p>
+            </a>
+        </div>
+        <div class="myMaterials">
+            <a href="Material/it.pdf" target="myFrame" onclick="location.href='#myFrame'">
+                <h1>Internet Technology</h1>
+                <p class="myP">HTML, CSS & JavaScript</p>
+            </a>
+        </div>
+    </div>
+
+    <iframe name="myFrame" id="myFrame" width="80%" height="600"></iframe>
+
+      <footer id="myFooter">&copy; 2026 Edugate™ All Rights Reserved.
+        <a href ="#">Contact us</a>
+        <div class="myIcons">
+            <a href="https://www.facebook.com/" class="myFacebook"><i class="fa fa-facebook"></i></a> 
+            <a href="https://www.twitter.com/" class="myTwitter"><i class="fa fa-twitter"></i></a> 
+            <a href="http://www.google.com/" class="myGoogle"><i class="fa fa-google"></i></a> 
+            <a href="https://www.linkedin.com/" class="myLinkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/" class="myYoutube"><i class="fa fa-youtube"></i></a>
+        </div>
+      </footer>
+
+      <script>
+        const search = document.getElementById("mySearch");
+        const materials = document.querySelectorAll(".myMaterials");
+        search.addEventListener("keyup", function(){const filter = search.value.toLowerCase();
+            materials.forEach(subject => {const text = subject.textContent.toLowerCase();
+            if (text.includes(filter)) {subject.style.display = "inline-block";}
+            else {subject.style.display = "none";}
+            });
+        });
+      </script>
+
+
+
+
+
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+      <script src="script.js"></script>
+</body>
+</html>
